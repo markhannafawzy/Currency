@@ -108,6 +108,7 @@
 		16EAEE1F294A97770096BBE5 /* NFXRawBodyDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EAEE05294A97760096BBE5 /* NFXRawBodyDetailsController.swift */; };
 		16EAEE20294A97770096BBE5 /* NFXSettingsController_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EAEE06294A97760096BBE5 /* NFXSettingsController_iOS.swift */; };
 		16EAEE21294A97770096BBE5 /* NFXListCell_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EAEE07294A97760096BBE5 /* NFXListCell_iOS.swift */; };
+		16F8587E29B429490054A1B5 /* CurrencySymbolsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8587D29B429490054A1B5 /* CurrencySymbolsUseCase.swift */; };
 		1C9C4A120DA6136CAD95AD11 /* Pods_Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552F4B6AF80D07044A95B172 /* Pods_Currency.framework */; };
 		4307934121C9D80D003C5BF0 /* RxError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4307934021C9D80D003C5BF0 /* RxError.swift */; };
 		4307934321C9DA6C003C5BF0 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4307934221C9DA6C003C5BF0 /* Driver.swift */; };
@@ -257,6 +258,7 @@
 		16EAEE05294A97760096BBE5 /* NFXRawBodyDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXRawBodyDetailsController.swift; sourceTree = "<group>"; };
 		16EAEE06294A97760096BBE5 /* NFXSettingsController_iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXSettingsController_iOS.swift; sourceTree = "<group>"; };
 		16EAEE07294A97760096BBE5 /* NFXListCell_iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXListCell_iOS.swift; sourceTree = "<group>"; };
+		16F8587D29B429490054A1B5 /* CurrencySymbolsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySymbolsUseCase.swift; sourceTree = "<group>"; };
 		33BD1A76DCC7CE1F0F6FF278 /* Pods-BookFairTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookFairTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookFairTests/Pods-BookFairTests.debug.xcconfig"; sourceTree = "<group>"; };
 		36A681191E9522F67040C5B4 /* Pods_CleanArchitectureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanArchitectureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4307934021C9D80D003C5BF0 /* RxError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxError.swift; sourceTree = "<group>"; };
@@ -702,6 +704,7 @@
 			isa = PBXGroup;
 			children = (
 				160F57FC29B418C800F48999 /* ConvertCurrencyUseCase.swift */,
+				16F8587D29B429490054A1B5 /* CurrencySymbolsUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -1168,6 +1171,7 @@
 				16EAEE11294A97770096BBE5 /* NFXAuthenticationChallengeSender.swift in Sources */,
 				1697EFAE29B2832100163EF0 /* PrimitiveSequenceExtensions.swift in Sources */,
 				1654EB2B28711E3700E0D0B1 /* UserDefaultsUtil.swift in Sources */,
+				16F8587E29B429490054A1B5 /* CurrencySymbolsUseCase.swift in Sources */,
 				435A7FE021F009530014D01F /* TableViewCell.swift in Sources */,
 				16EAEE1A294A97770096BBE5 /* NFXListController_iOS.swift in Sources */,
 				1697EFB129B2832100163EF0 /* URL+NetworkLayer.swift in Sources */,
