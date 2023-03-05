@@ -20,13 +20,30 @@ final class RootCoordinator: Coordinate {
     func showScreen(_ screen: Screen) {
         switch screen {
         case .mainScreen:
-            let splashViewController = mainScreenController()
-            window?.rootViewController = splashViewController
+            let mainScreenController = mainScreenController()
+            window?.rootViewController = mainScreenController
         }
     }
     
     private func mainScreenController() -> UIViewController {
-        return UIViewController()
+        
+        let mainScreenController = CurrencyConversionViewController()
+        let navigationController = NavigationController(rootViewController: mainScreenController)
+        let coordinator = CurrencyConversionCoordinator()
+        
+        let router = Router<CurrencyTarget>()
+        let coreDataStack = CoreDataStack()
+        let localDataSource = LocalDataSource<Conversion>(context: coreDataStack.context)
+        
+        let repository = CurrencyRepositoryImplementation(remoteService: router, localService: localDataSource)
+        
+        let convertUseCase = ConvertCurrencyUseCaseImplementation(repository: repository)
+        let symbolsUseCase = CurrencySymbolsUseCaseImplementation(repository: repository)
+        let viewModel = CurrencyConversionViewModel(coordinator: coordinator, currencySymbolsUseCase: symbolsUseCase, currencyConversionUseCase: convertUseCase)
+        
+        coordinator.viewController = mainScreenController
+        mainScreenController.viewModel = viewModel
+        return navigationController
     }
 }
 

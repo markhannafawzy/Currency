@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrencyConversionViewController" customModule="Currency" customModuleProvider="target">
+            <connections>
+                <outlet property="detailsButton" destination="Aku-c2-cnN" id="pvD-uc-kMv"/>
+                <outlet property="fromButton" destination="H27-fh-tX9" id="yhh-AN-l79"/>
+                <outlet property="fromTF" destination="juB-UI-I1e" id="n0n-tC-ISr"/>
+                <outlet property="toButton" destination="P4E-xW-xR1" id="fe0-n6-JzR"/>
+                <outlet property="toTF" destination="fIw-kQ-2ii" id="bxQ-34-Ihr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="RtR-pc-8de">
+                    <rect key="frame" x="32.5" y="398.5" width="349" height="109"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="ees-YG-MMe">
+                            <rect key="frame" x="0.0" y="3" width="100" height="103"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H27-fh-tX9">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="From"/>
+                                </button>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="juB-UI-I1e">
+                                    <rect key="frame" x="0.0" y="69" width="100" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="qHf-kM-l0I"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="sGb-rO-DxR">
+                            <rect key="frame" x="149" y="0.0" width="51" height="109"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyB-hW-WwX">
+                                    <rect key="frame" x="0.0" y="0.0" width="51" height="30"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="reverse"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aku-c2-cnN">
+                                    <rect key="frame" x="0.0" y="79" width="51" height="30"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Details"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="zT2-vJ-8cn">
+                            <rect key="frame" x="249" y="3" width="100" height="103"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4E-xW-xR1">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="To"/>
+                                </button>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fIw-kQ-2ii">
+                                    <rect key="frame" x="0.0" y="69" width="100" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="mCN-On-fpZ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="RtR-pc-8de" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32.5" id="Lnk-Gu-l2G"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RtR-pc-8de" secondAttribute="trailing" constant="32.5" id="gUK-jF-Mg2"/>
+                <constraint firstItem="RtR-pc-8de" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="wtW-WY-d1b"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

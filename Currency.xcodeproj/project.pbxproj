@@ -18,8 +18,6 @@
 		1654EB2728711E3700E0D0B1 /* GeneralUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1654EB1628711E3700E0D0B1 /* GeneralUtils.swift */; };
 		1654EB2A28711E3700E0D0B1 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1654EB1928711E3700E0D0B1 /* UIUtils.swift */; };
 		1654EB2B28711E3700E0D0B1 /* UserDefaultsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1654EB1A28711E3700E0D0B1 /* UserDefaultsUtil.swift */; };
-		1654EB2C28711E3700E0D0B1 /* TextValidationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1654EB1C28711E3700E0D0B1 /* TextValidationType.swift */; };
-		1654EB2D28711E3700E0D0B1 /* TextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1654EB1D28711E3700E0D0B1 /* TextValidator.swift */; };
 		1654EB352871201500E0D0B1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1654EB322871201500E0D0B1 /* Localizable.strings */; };
 		1697EF3F29B210DF00163EF0 /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697EF3E29B210DF00163EF0 /* CurrencyTests.swift */; };
 		1697EF9829B2832100163EF0 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697EF7C29B2831D00163EF0 /* TargetType.swift */; };
@@ -79,7 +77,6 @@
 		16B2647528D96E50002C0600 /* Almarai-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16B2647428D96E50002C0600 /* Almarai-Light.ttf */; };
 		16B2647728D96E5B002C0600 /* Almarai-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16B2647628D96E5B002C0600 /* Almarai-Bold.ttf */; };
 		16B2647928D96F50002C0600 /* Almarai-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16B2647828D96F50002C0600 /* Almarai-ExtraBold.ttf */; };
-		16B56EA52881FA5E00F0040F /* TextValidator+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B56EA42881FA5E00F0040F /* TextValidator+Rx.swift */; };
 		16C0487C28C2762500EDE5E4 /* ServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0487B28C2762500EDE5E4 /* ServerConfiguration.swift */; };
 		16C0488328C2777100EDE5E4 /* TargetType+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C0488228C2777000EDE5E4 /* TargetType+Common.swift */; };
 		16EAEE08294A97760096BBE5 /* NFXAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EAEDED294A97760096BBE5 /* NFXAssets.swift */; };
@@ -109,6 +106,18 @@
 		16EAEE20294A97770096BBE5 /* NFXSettingsController_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EAEE06294A97760096BBE5 /* NFXSettingsController_iOS.swift */; };
 		16EAEE21294A97770096BBE5 /* NFXListCell_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EAEE07294A97760096BBE5 /* NFXListCell_iOS.swift */; };
 		16F8587E29B429490054A1B5 /* CurrencySymbolsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8587D29B429490054A1B5 /* CurrencySymbolsUseCase.swift */; };
+		16F8588129B42B7C0054A1B5 /* CurrencyConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8587F29B42B7C0054A1B5 /* CurrencyConversionViewController.swift */; };
+		16F8588229B42B7C0054A1B5 /* CurrencyConversionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16F8588029B42B7C0054A1B5 /* CurrencyConversionViewController.xib */; };
+		16F8588529B42BBB0054A1B5 /* CurrencyConversionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8588429B42BBB0054A1B5 /* CurrencyConversionViewModel.swift */; };
+		16F8588729B42BD10054A1B5 /* CurrencyConversionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8588629B42BD10054A1B5 /* CurrencyConversionCoordinator.swift */; };
+		16F8588B29B4749F0054A1B5 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8588929B4749F0054A1B5 /* HistoryViewController.swift */; };
+		16F8588C29B4749F0054A1B5 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16F8588A29B4749F0054A1B5 /* HistoryViewController.xib */; };
+		16F8588E29B474B50054A1B5 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8588D29B474B50054A1B5 /* HistoryViewModel.swift */; };
+		16F8589029B474D10054A1B5 /* HistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8588F29B474D10054A1B5 /* HistoryCoordinator.swift */; };
+		16F8589229B4763B0054A1B5 /* AllConversionsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8589129B4763B0054A1B5 /* AllConversionsUseCase.swift */; };
+		16F8589629B4771C0054A1B5 /* HistoryConversionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8589429B4771C0054A1B5 /* HistoryConversionTableViewCell.swift */; };
+		16F8589729B4771C0054A1B5 /* HistoryConversionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16F8589529B4771C0054A1B5 /* HistoryConversionTableViewCell.xib */; };
+		16F8589929B477390054A1B5 /* HistoryConversionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8589829B477390054A1B5 /* HistoryConversionCellViewModel.swift */; };
 		1C9C4A120DA6136CAD95AD11 /* Pods_Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552F4B6AF80D07044A95B172 /* Pods_Currency.framework */; };
 		4307934121C9D80D003C5BF0 /* RxError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4307934021C9D80D003C5BF0 /* RxError.swift */; };
 		4307934321C9DA6C003C5BF0 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4307934221C9DA6C003C5BF0 /* Driver.swift */; };
@@ -164,8 +173,6 @@
 		1654EB1628711E3700E0D0B1 /* GeneralUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralUtils.swift; sourceTree = "<group>"; };
 		1654EB1928711E3700E0D0B1 /* UIUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
 		1654EB1A28711E3700E0D0B1 /* UserDefaultsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtil.swift; sourceTree = "<group>"; };
-		1654EB1C28711E3700E0D0B1 /* TextValidationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextValidationType.swift; sourceTree = "<group>"; };
-		1654EB1D28711E3700E0D0B1 /* TextValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextValidator.swift; sourceTree = "<group>"; };
 		1654EB2E28711EF500E0D0B1 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		1654EB3028711F1100E0D0B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		1654EB332871201500E0D0B1 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -229,7 +236,6 @@
 		16B2647428D96E50002C0600 /* Almarai-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-Light.ttf"; sourceTree = "<group>"; };
 		16B2647628D96E5B002C0600 /* Almarai-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-Bold.ttf"; sourceTree = "<group>"; };
 		16B2647828D96F50002C0600 /* Almarai-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Almarai-ExtraBold.ttf"; sourceTree = "<group>"; };
-		16B56EA42881FA5E00F0040F /* TextValidator+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextValidator+Rx.swift"; sourceTree = "<group>"; };
 		16C0487B28C2762500EDE5E4 /* ServerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfiguration.swift; sourceTree = "<group>"; };
 		16C0488228C2777000EDE5E4 /* TargetType+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TargetType+Common.swift"; sourceTree = "<group>"; };
 		16EAEDED294A97760096BBE5 /* NFXAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXAssets.swift; sourceTree = "<group>"; };
@@ -259,6 +265,18 @@
 		16EAEE06294A97760096BBE5 /* NFXSettingsController_iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXSettingsController_iOS.swift; sourceTree = "<group>"; };
 		16EAEE07294A97760096BBE5 /* NFXListCell_iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFXListCell_iOS.swift; sourceTree = "<group>"; };
 		16F8587D29B429490054A1B5 /* CurrencySymbolsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySymbolsUseCase.swift; sourceTree = "<group>"; };
+		16F8587F29B42B7C0054A1B5 /* CurrencyConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversionViewController.swift; sourceTree = "<group>"; };
+		16F8588029B42B7C0054A1B5 /* CurrencyConversionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyConversionViewController.xib; sourceTree = "<group>"; };
+		16F8588429B42BBB0054A1B5 /* CurrencyConversionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversionViewModel.swift; sourceTree = "<group>"; };
+		16F8588629B42BD10054A1B5 /* CurrencyConversionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversionCoordinator.swift; sourceTree = "<group>"; };
+		16F8588929B4749F0054A1B5 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		16F8588A29B4749F0054A1B5 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		16F8588D29B474B50054A1B5 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		16F8588F29B474D10054A1B5 /* HistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCoordinator.swift; sourceTree = "<group>"; };
+		16F8589129B4763B0054A1B5 /* AllConversionsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllConversionsUseCase.swift; sourceTree = "<group>"; };
+		16F8589429B4771C0054A1B5 /* HistoryConversionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryConversionTableViewCell.swift; sourceTree = "<group>"; };
+		16F8589529B4771C0054A1B5 /* HistoryConversionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryConversionTableViewCell.xib; sourceTree = "<group>"; };
+		16F8589829B477390054A1B5 /* HistoryConversionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryConversionCellViewModel.swift; sourceTree = "<group>"; };
 		33BD1A76DCC7CE1F0F6FF278 /* Pods-BookFairTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookFairTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookFairTests/Pods-BookFairTests.debug.xcconfig"; sourceTree = "<group>"; };
 		36A681191E9522F67040C5B4 /* Pods_CleanArchitectureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanArchitectureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4307934021C9D80D003C5BF0 /* RxError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxError.swift; sourceTree = "<group>"; };
@@ -361,7 +379,6 @@
 				1654EB1628711E3700E0D0B1 /* GeneralUtils.swift */,
 				1654EB1928711E3700E0D0B1 /* UIUtils.swift */,
 				1654EB1A28711E3700E0D0B1 /* UserDefaultsUtil.swift */,
-				1654EB1B28711E3700E0D0B1 /* Validation */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -374,16 +391,6 @@
 				1621CA31289A0E9E0096760F /* GeneralExtensions.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		1654EB1B28711E3700E0D0B1 /* Validation */ = {
-			isa = PBXGroup;
-			children = (
-				1654EB1C28711E3700E0D0B1 /* TextValidationType.swift */,
-				1654EB1D28711E3700E0D0B1 /* TextValidator.swift */,
-				16B56EA42881FA5E00F0040F /* TextValidator+Rx.swift */,
-			);
-			path = Validation;
 			sourceTree = "<group>";
 		};
 		1654EB312871201500E0D0B1 /* Localization */ = {
@@ -640,6 +647,39 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
+		16F8588329B42B810054A1B5 /* Currency Conversion View */ = {
+			isa = PBXGroup;
+			children = (
+				16F8587F29B42B7C0054A1B5 /* CurrencyConversionViewController.swift */,
+				16F8588029B42B7C0054A1B5 /* CurrencyConversionViewController.xib */,
+				16F8588429B42BBB0054A1B5 /* CurrencyConversionViewModel.swift */,
+				16F8588629B42BD10054A1B5 /* CurrencyConversionCoordinator.swift */,
+			);
+			path = "Currency Conversion View";
+			sourceTree = "<group>";
+		};
+		16F8588829B474600054A1B5 /* HistoryScreen */ = {
+			isa = PBXGroup;
+			children = (
+				16F8589329B476D60054A1B5 /* Cells */,
+				16F8588929B4749F0054A1B5 /* HistoryViewController.swift */,
+				16F8588A29B4749F0054A1B5 /* HistoryViewController.xib */,
+				16F8588D29B474B50054A1B5 /* HistoryViewModel.swift */,
+				16F8588F29B474D10054A1B5 /* HistoryCoordinator.swift */,
+			);
+			path = HistoryScreen;
+			sourceTree = "<group>";
+		};
+		16F8589329B476D60054A1B5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				16F8589429B4771C0054A1B5 /* HistoryConversionTableViewCell.swift */,
+				16F8589529B4771C0054A1B5 /* HistoryConversionTableViewCell.xib */,
+				16F8589829B477390054A1B5 /* HistoryConversionCellViewModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		4307933D21C9D7C6003C5BF0 /* Reactive */ = {
 			isa = PBXGroup;
 			children = (
@@ -662,6 +702,8 @@
 		433BCAD421C7EDF60098DCF8 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				16F8588829B474600054A1B5 /* HistoryScreen */,
+				16F8588329B42B810054A1B5 /* Currency Conversion View */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -705,6 +747,7 @@
 			children = (
 				160F57FC29B418C800F48999 /* ConvertCurrencyUseCase.swift */,
 				16F8587D29B429490054A1B5 /* CurrencySymbolsUseCase.swift */,
+				16F8589129B4763B0054A1B5 /* AllConversionsUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -984,10 +1027,13 @@
 				16B2647528D96E50002C0600 /* Almarai-Light.ttf in Resources */,
 				16B2647928D96F50002C0600 /* Almarai-ExtraBold.ttf in Resources */,
 				1654EB352871201500E0D0B1 /* Localizable.strings in Resources */,
+				16F8588C29B4749F0054A1B5 /* HistoryViewController.xib in Resources */,
+				16F8589729B4771C0054A1B5 /* HistoryConversionTableViewCell.xib in Resources */,
 				16B2647728D96E5B002C0600 /* Almarai-Bold.ttf in Resources */,
 				16AECD15296E39AC006633AA /* LookupsDialog.xib in Resources */,
 				16B2647328D96E43002C0600 /* Almarai-Regular.ttf in Resources */,
 				16AECD11296E1EB5006633AA /* LookupTableViewCell.xib in Resources */,
+				16F8588229B42B7C0054A1B5 /* CurrencyConversionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1092,7 +1138,6 @@
 				4307934521C9E393003C5BF0 /* Coordinate.swift in Sources */,
 				1697EF9E29B2832100163EF0 /* NetworkLayerManager+Defaults.swift in Sources */,
 				16EAEE15294A97770096BBE5 /* NFXHTTPModel.swift in Sources */,
-				1654EB2D28711E3700E0D0B1 /* TextValidator.swift in Sources */,
 				1697F04229B2E9F400163EF0 /* CoreDataStack.swift in Sources */,
 				1697EFA229B2832100163EF0 /* MultipartFormData.swift in Sources */,
 				160F57FB29B3EE9200F48999 /* CDConversion+CoreDataProperties.swift in Sources */,
@@ -1105,6 +1150,7 @@
 				1621CA32289A0E9E0096760F /* GeneralExtensions.swift in Sources */,
 				1697F04429B2E9F400163EF0 /* Observable+Ext.swift in Sources */,
 				1697EFA029B2832100163EF0 /* ValidationType.swift in Sources */,
+				16F8589929B477390054A1B5 /* HistoryConversionCellViewModel.swift in Sources */,
 				16EAEE12294A97770096BBE5 /* NFX.swift in Sources */,
 				16EAEE1E294A97770096BBE5 /* NFXStatisticsController_iOS.swift in Sources */,
 				1697EF9C29B2832100163EF0 /* NetworkLayer+Alamofire.swift in Sources */,
@@ -1114,6 +1160,7 @@
 				433BCAFA21C804FB0098DCF8 /* Dictionary.swift in Sources */,
 				43682B3C21C6B38B00716C2C /* App.String.swift in Sources */,
 				1697F07429B2EA7E00163EF0 /* Predicate.swift in Sources */,
+				16F8588729B42BD10054A1B5 /* CurrencyConversionCoordinator.swift in Sources */,
 				16EAEE0F294A97770096BBE5 /* NFXConstants.swift in Sources */,
 				16EAEE1B294A97770096BBE5 /* NFXURLDetailsControllerViewController.swift in Sources */,
 				16EAEE1F294A97770096BBE5 /* NFXRawBodyDetailsController.swift in Sources */,
@@ -1126,6 +1173,7 @@
 				1697EFA329B2832100163EF0 /* Endpoint.swift in Sources */,
 				433BCADD21C7F0000098DCF8 /* Mapping.swift in Sources */,
 				1654EB2128711E3700E0D0B1 /* DateUtils.swift in Sources */,
+				16F8589629B4771C0054A1B5 /* HistoryConversionTableViewCell.swift in Sources */,
 				1697F07729B2F3AA00163EF0 /* CurrencyRepositoryImplementation.swift in Sources */,
 				1697EFAC29B2832100163EF0 /* NetworkLayerManager+Internal.swift in Sources */,
 				433BCAFC21C808B10098DCF8 /* Sequence.swift in Sources */,
@@ -1138,7 +1186,6 @@
 				16EAEE21294A97770096BBE5 /* NFXListCell_iOS.swift in Sources */,
 				1697EFA829B2832100163EF0 /* NetworkRouter.swift in Sources */,
 				16EAEE16294A97770096BBE5 /* NFXHelper.swift in Sources */,
-				1654EB2C28711E3700E0D0B1 /* TextValidationType.swift in Sources */,
 				4307934721C9ECB5003C5BF0 /* RxIndicator.swift in Sources */,
 				1697F05629B2E9F400163EF0 /* Persistable.swift in Sources */,
 				4307934121C9D80D003C5BF0 /* RxError.swift in Sources */,
@@ -1157,11 +1204,13 @@
 				1697EF9F29B2832100163EF0 /* URLRequest+Encoding.swift in Sources */,
 				1654EB2528711E3700E0D0B1 /* GeneralExtentions.swift in Sources */,
 				16EAEE0B294A97770096BBE5 /* NFXGenericController.swift in Sources */,
+				16F8589229B4763B0054A1B5 /* AllConversionsUseCase.swift in Sources */,
+				16F8588129B42B7C0054A1B5 /* CurrencyConversionViewController.swift in Sources */,
 				16EAEE09294A97760096BBE5 /* NFXWindowController.swift in Sources */,
 				43682B1721C6A93F00716C2C /* ViewController.swift in Sources */,
 				1697EFA429B2832100163EF0 /* NetworkLayerManager+Rx.swift in Sources */,
+				16F8588E29B474B50054A1B5 /* HistoryViewModel.swift in Sources */,
 				1697F07929B2F47300163EF0 /* CurrencyRepository.swift in Sources */,
-				16B56EA52881FA5E00F0040F /* TextValidator+Rx.swift in Sources */,
 				438085102212EE0A00E7A0FC /* App.Key.swift in Sources */,
 				4310636521EDBCF90088BB14 /* UIColor.swift in Sources */,
 				16EAEE1C294A97770096BBE5 /* NFXHelper_iOS.swift in Sources */,
@@ -1170,6 +1219,7 @@
 				16AECD0A296E1E70006633AA /* LookupsDialog.swift in Sources */,
 				16EAEE11294A97770096BBE5 /* NFXAuthenticationChallengeSender.swift in Sources */,
 				1697EFAE29B2832100163EF0 /* PrimitiveSequenceExtensions.swift in Sources */,
+				16F8588B29B4749F0054A1B5 /* HistoryViewController.swift in Sources */,
 				1654EB2B28711E3700E0D0B1 /* UserDefaultsUtil.swift in Sources */,
 				16F8587E29B429490054A1B5 /* CurrencySymbolsUseCase.swift in Sources */,
 				435A7FE021F009530014D01F /* TableViewCell.swift in Sources */,
@@ -1191,6 +1241,7 @@
 				1697F04329B2E9F400163EF0 /* NSManagedObjectContext+Ext.swift in Sources */,
 				435A7FB221EF70BE0014D01F /* RootCoordinator.swift in Sources */,
 				1697EF9D29B2832100163EF0 /* Cancellable.swift in Sources */,
+				16F8588529B42BBB0054A1B5 /* CurrencyConversionViewModel.swift in Sources */,
 				160F57FA29B3EE9200F48999 /* CDConversion+CoreDataClass.swift in Sources */,
 				1654EB2728711E3700E0D0B1 /* GeneralUtils.swift in Sources */,
 				1697EFAD29B2832100163EF0 /* NetworkLayerError.swift in Sources */,
@@ -1204,6 +1255,7 @@
 				4310635E21EDB38F0088BB14 /* Date.swift in Sources */,
 				169A952229B362C40019FC81 /* CDConversion+Ext.swift in Sources */,
 				1697F08029B2FFAD00163EF0 /* CurrencyTarget.swift in Sources */,
+				16F8589029B474D10054A1B5 /* HistoryCoordinator.swift in Sources */,
 				1697EFB029B2832100163EF0 /* Logger.swift in Sources */,
 				16EAEE19294A97770096BBE5 /* NFXDetailsController_iOS.swift in Sources */,
 				1697EFA929B2832100163EF0 /* AnyEncodable.swift in Sources */,

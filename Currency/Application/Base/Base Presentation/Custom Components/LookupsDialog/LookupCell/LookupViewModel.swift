@@ -34,3 +34,13 @@ struct LookupItem: Codable {
     }
 }
 extension LookupItem: LookupItemProtocol {}
+
+extension String: LookupItemProtocol {
+    var id: Int {
+        Int.random(in: 0..<6)
+    }
+    
+    var title: String {
+        self
+    }
+}
