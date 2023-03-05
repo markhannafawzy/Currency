@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+
+  Created by Mark Hanna on 2/18/20.
+*/
+
+//MARK: utils
+"appName" = "Currency";
+"ok" = "Ok";
+"no_data" = "No Data";
+"not_empty" = "This field can't be empty";
+"restartApp" = "Restart App";
+"cancel" = "Cancel";
+"settings" = "Settings";
+"retryTitle" = "Oh No!";
+"retryDescriptionError" = "Something went wrong, please try again.";
+"retryDescriptionNoDataFound" = "No data Found!";
+"retryButtonTitle" = "Retry";
+
+
+//Mark: Settings
+"On" = "On";
+"Off" = "Off";
+"changeLanguage" = "Change Language";
+"language" = "Language";
+"arabic" = "Arabic";
+"english" = "English";
+"appRestartMessage" = "You should restart the application to save your language settings.";
+"restartApp" = "Restart App";
+"appSettings" = "Application Settings";
+
+//Main Page
+"From" = "From";
+"To" = "to";

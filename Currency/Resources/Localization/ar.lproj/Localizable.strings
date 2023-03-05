@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+
+  Created by Mark Hanna on 2/18/20.
+*/
+
+//MARK: utils
+"appName" = "تحويل العملات";
+"ok" = "موافق";
+"no_data" = "لا يوجد معلومات";
+"not_empty" = "لا يمكن ترك هذا الحقل فارغا";
+"restartApp" = "إعادة تشغيل التطبيق";
+"cancel" = "إلغاء";
+"settings" = "الإعدادات";
+"retryTitle" = "عفواً!";
+"retryDescriptionError" = "حدث خطأ، حاول مرة اخرى";
+"retryDescriptionNoDataFound" = "لا توجد بيانات";
+"retryButtonTitle" = "اعادة";
+
+//Mark: settings
+"On" = "تشغيل";
+"Off" = "إيقاف";
+"changeLanguage" = "تغيير اللغة";
+"language" = "اللغة";
+"arabic" = "العربية";
+"english" = "English";
+"appRestartMessage" = "يتوجب عليك إعادة تشغيل التطبيق حتى يتم تغيير اللغة.";
+"restartApp" = "إعادة تشغيل التطبيق";
+"appSettings" = "اعدادات التطبيق";
+
+//Main Page
+"view_all" = "عرض الكل";
+"latest_books" = "أخر الكتب المضافة";
+"latest_publishing_houses" = "دور النشر";
+"From" = "من";
+"To" = "الي";

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Almarai-Bold.ttf">
+            <string>Almarai-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LookupsDialog" customModule="BookFair" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAT-ra-WtM">
+                    <rect key="frame" x="25" y="269" width="364" height="358"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWb-Nc-ZeN">
+                            <rect key="frame" x="323" y="16" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="5jR-mI-GNr"/>
+                                <constraint firstAttribute="height" constant="25" id="NZw-zX-QZA"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="ios_close_icon"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="تويتة للنشر والتوزيع" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcx-T5-qaL">
+                            <rect key="frame" x="114" y="20" width="136.5" height="18"/>
+                            <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="16"/>
+                            <color key="textColor" red="0.19215686269999999" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HEc-dY-4FL">
+                            <rect key="frame" x="12" y="50" width="340" height="296"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="No data found" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssV-b2-TKa">
+                                    <rect key="frame" x="118" y="139" width="104" height="18"/>
+                                    <fontDescription key="fontDescription" name="Almarai-Bold" family="Almarai" pointSize="16"/>
+                                    <color key="textColor" red="0.19215686269999999" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizableString" value="retryDescriptionNoDataFound"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="ssV-b2-TKa" firstAttribute="centerY" secondItem="HEc-dY-4FL" secondAttribute="centerY" id="GMp-y8-K6h"/>
+                                <constraint firstItem="ssV-b2-TKa" firstAttribute="centerX" secondItem="HEc-dY-4FL" secondAttribute="centerX" id="H9T-Lm-VuN"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NCn-Wp-TJk">
+                            <rect key="frame" x="12" y="50" width="340" height="296"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="HEc-dY-4FL" firstAttribute="trailing" secondItem="NCn-Wp-TJk" secondAttribute="trailing" id="0Sf-b7-g7b"/>
+                        <constraint firstItem="xcx-T5-qaL" firstAttribute="top" secondItem="fAT-ra-WtM" secondAttribute="top" constant="20" id="4Uc-UX-Ke0"/>
+                        <constraint firstItem="HEc-dY-4FL" firstAttribute="top" secondItem="NCn-Wp-TJk" secondAttribute="top" id="5lD-mq-wlP"/>
+                        <constraint firstAttribute="trailing" secondItem="NCn-Wp-TJk" secondAttribute="trailing" constant="12" id="7Ku-z8-yvF"/>
+                        <constraint firstItem="NCn-Wp-TJk" firstAttribute="top" secondItem="xcx-T5-qaL" secondAttribute="bottom" constant="12" id="Bi8-8A-39M"/>
+                        <constraint firstAttribute="trailing" secondItem="bWb-Nc-ZeN" secondAttribute="trailing" constant="16" id="MUv-dK-EHw"/>
+                        <constraint firstAttribute="bottom" secondItem="NCn-Wp-TJk" secondAttribute="bottom" constant="12" id="ODN-l9-eXZ"/>
+                        <constraint firstItem="xcx-T5-qaL" firstAttribute="centerX" secondItem="fAT-ra-WtM" secondAttribute="centerX" id="W7v-KZ-dSG"/>
+                        <constraint firstItem="NCn-Wp-TJk" firstAttribute="leading" secondItem="fAT-ra-WtM" secondAttribute="leading" constant="12" id="arh-Rt-FRK"/>
+                        <constraint firstItem="bWb-Nc-ZeN" firstAttribute="top" secondItem="fAT-ra-WtM" secondAttribute="top" constant="16" id="eoK-zH-aOh"/>
+                        <constraint firstItem="HEc-dY-4FL" firstAttribute="bottom" secondItem="NCn-Wp-TJk" secondAttribute="bottom" id="g3n-Au-ejP"/>
+                        <constraint firstAttribute="height" constant="358" id="jXW-HN-cbJ"/>
+                        <constraint firstItem="HEc-dY-4FL" firstAttribute="leading" secondItem="NCn-Wp-TJk" secondAttribute="leading" id="uXQ-9I-p64"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.3001647741616178" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fAT-ra-WtM" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.879227" id="BiD-xT-SMr"/>
+                <constraint firstItem="fAT-ra-WtM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JBt-RE-eTg"/>
+                <constraint firstItem="fAT-ra-WtM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ayp-MC-SSX"/>
+            </constraints>
+            <connections>
+                <outlet property="closeBtn" destination="bWb-Nc-ZeN" id="CGp-9K-FGu"/>
+                <outlet property="noDataView" destination="HEc-dY-4FL" id="k4x-rZ-cu9"/>
+                <outlet property="tableView" destination="NCn-Wp-TJk" id="wFM-Fn-9sj"/>
+                <outlet property="titleLabel" destination="xcx-T5-qaL" id="sq0-3N-AvZ"/>
+                <outlet property="viewHeightConstraint" destination="jXW-HN-cbJ" id="MPi-b2-6hx"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ios_close_icon" width="12.5" height="12.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
